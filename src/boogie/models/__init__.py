@@ -3,6 +3,7 @@ from django.apps import apps as _apps
 # Import all fields and models. boogie.models serves as a drop-in replacement
 # for django models.
 from django.db.models import *
+from django.core.exceptions import *
 
 # Overload Django objects
 from .manager import Manager
