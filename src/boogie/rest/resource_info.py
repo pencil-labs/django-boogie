@@ -1,6 +1,7 @@
 from copy import copy
 
-from django.db.models import Model, AutoField, FieldDoesNotExist
+from django.db.models import Model, AutoField
+from django.core.exceptions import FieldDoesNotExist
 from django.urls import reverse
 from rest_framework.serializers import SerializerMethodField
 from sidekick import lazy
